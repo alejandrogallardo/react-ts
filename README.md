@@ -1,24 +1,24 @@
 # react-ts
 
 React con Typescript
-``
+```
 > npm init --yes
 > npm i react react-dom
 > npm i -D typescript webpack webpack-dev-server webpack-cli awesome-typescript-loader html-webpack-plugin css-loader mini-css-extract-plugin node-sass sass-loader @types/react @types/react-dom source-map-loader
-``
+```
 Crear Carpetas
-``
+```
 src -> components -> styles
-``
-``
+```
+```
 tsc --init
 "jsx": "react"
 "sourceMap": true
 "outDir": "./build/"
 "removeComments": true
 "noImplicitAny": true
-``
-``
+```
+```
 //*********
 // Cofiguracion de Webpack
 //*********
@@ -65,8 +65,8 @@ module.exports = {
     ],
     devtool: 'source-map'
 }
-``
-``
+```
+```
 //===========
 // Hola mundo con React
 // index.tsx
@@ -77,4 +77,4 @@ import * as ReactDOM from 'react-dom'
 const app = document.getElementById('app');
 
 ReactDOM.render(<h1>Hola Mundo!</h1>, app)
-``
+```
